@@ -1,0 +1,26 @@
+{{>partials/header}}
+
+{{#banner}}
+    <section class="banner" style="background-image: url('/imagens/{{ background }}')">{{ title }}</section>
+    <h2>{{ title }} já lidos</h2>
+{{/banner}}
+
+<div class="container list">
+    {{#lista}}
+        <div class="item">
+            <img src="/imagens/{{ imagem }}" class="item--image" />
+            <div class="item--name">{{ nome }}</div>
+            <div class="item--autor">{{ autor }}</div>
+            <div class="item--ano">{{ ano }}</div>
+        </div>
+    {{/lista}}
+</div>
+
+{{^lista}}
+    <div class="container no-list">
+        <h2>Não foi possível encontrar os livros.</h2>
+    </div>
+{{/lista}}
+
+{{>partials/footer}}
+
