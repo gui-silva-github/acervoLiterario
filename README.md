@@ -13,7 +13,7 @@ Este projeto é um servidor web construído com Node.js e Express que serve como
 1. **Clonar o Repositório**:
     ```sh
     git clone https://github.com/gui-silva-github/acervoLiterario.git
-    cd acervo-literario
+    cd acervoLiterario
     ```
 
 2. **Instalar as Dependências**:
