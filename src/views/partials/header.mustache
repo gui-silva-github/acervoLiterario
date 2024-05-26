@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo Literário - Os meus livros</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="/imagens/faviconTodos.jpeg">
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="/">Acervo Literário</a>
+        <form method="GET" action="/search">
+            <input type="search" name="q" placeholder="Pesquise por nome" value="{{query}}"/>
+        </form>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li class="{{#menu.todos}}active{{/menu.todos}}"><a href="/">Todos</a></li>
+        <li class="{{#menu.comedia}}active{{/menu.comedia}}"><a href="/comedia">Comédia</a></li>
+        <li class="{{#menu.cristao}}active{{/menu.cristao}}"><a href="/cristao">Cristão</a></li>
+        <li class="{{#menu.drama}}active{{/menu.drama}}"><a href="/drama">Drama</a></li>
+        <li class="{{#menu.evolucao}}active{{/menu.evolucao}}"><a href="/evolucao">Evolução</a></li>
+        <li class="{{#menu.fantasia}}active{{/menu.fantasia}}"><a href="/fantasia">Fantasia</a></li>
+        <li class="{{#menu.ficcao}}active{{/menu.ficcao}}"><a href="/ficcao">Ficção</a></li>
+        <li class="{{#menu.historia}}active{{/menu.historia}}"><a href="/historia">História</a></li>
+        <li class="{{#menu.misterio}}active{{/menu.misterio}}"><a href="/misterio">Mistério</a></li>
+        <li class="{{#menu.romance}}active{{/menu.romance}}"><a href="/romance">Romance</a></li>
+        <li class="{{#menu.suspense}}active{{/menu.suspense}}"><a href="/suspense">Suspense</a></li>
+        <li class="{{#menu.terror}}active{{/menu.terror}}"><a href="/terror">Terror</a></li>
+    </ul>
+</nav>
