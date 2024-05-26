@@ -17,7 +17,7 @@ server.engine('mustache', (0, mustache_express_1.default)());
 server.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
 server.use(index_1.default);
 server.use((req, res) => {
-    res.send('pages/404');
+    res.render('pages/404');
 });
 server.listen(PORTA, () => {
     console.log(`Servidor rodando na porta: ${PORTA}. Endereço de url: http://localhost:4000`);
